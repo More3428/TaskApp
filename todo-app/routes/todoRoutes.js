@@ -1,10 +1,18 @@
+
+/*
+Notes: 
+    Here we define the API endpoints for CRUD operations
+*/
+
+
+
 const express = require('express');
 const router = express.Router();
 const {
-    getTodos,
-    createTodo,
-    updateTodo,
-    deleteTodo,
+  getTodos,
+  createTodo,
+  updateTodo,
+  deleteTodo,
 } = require('../controllers/todoController');
 
 router.get('/', getTodos);
